@@ -23,7 +23,7 @@ export class AppComponent implements OnInit{
         description : 'Mon beau goss !',
         imageUrl : 'https://wtop.com/wp-content/uploads/2020/06/HEALTHYFRESH.jpg',
         createdDate : new Date(),
-       snaps : 1
+       snaps : 0
        }
     ];
      
