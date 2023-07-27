@@ -15,7 +15,9 @@
         <p>Mis en ligne le {{ faceSnap.createdDate }}</p>
         <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
         <p>{{ faceSnap.description }}</p>
-        <p> <button (click)="onFaceSnap()">{{buttonText}}</button> {{ faceSnap.snaps }} </p>
+        <p> 
+           <span [ngStyle]="{ color : 'rgb(0,' + faceSnap.snaps+', 0)'}"><button (click)="onFaceSnap()">{{buttonText}}</button> {{ faceSnap.snaps }}</span> 
+        </p>
       </div>
 </body>
 

@@ -7,24 +7,25 @@ import { FaceSnap } from './models/face-snap.models';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-   mySnap! : FaceSnap;
-   middleSnap! : FaceSnap;
-   lastSnap! : FaceSnap;
+   faceSnaps! : FaceSnap[]; 
    ngOnInit(){
-     this.mySnap = {
-       title: 'Archibald',
-       description : 'Mon meilleiur ami depuis tout petit !',
-       imageUrl : 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-       createdDate : new Date(),
-      snaps : 0,
-      location : "paris"
-     };
-      this.middleSnap = {
-       title: 'Chuck Bass',
-       description : 'Mon beau goss !',
-       imageUrl : 'https://wtop.com/wp-content/uploads/2020/06/HEALTHYFRESH.jpg',
-       createdDate : new Date(),
-      snaps : 1
-      };
+    this.faceSnaps = [
+      {
+        title: 'Archibald',
+        description : 'Mon meilleiur ami depuis tout petit !',
+        imageUrl : 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+        createdDate : new Date(),
+       snaps : 160,
+       location : "paris"
+      },
+      {
+        title: 'Chuck Bass',
+        description : 'Mon beau goss !',
+        imageUrl : 'https://wtop.com/wp-content/uploads/2020/06/HEALTHYFRESH.jpg',
+        createdDate : new Date(),
+       snaps : 1
+       }
+    ];
+     
    }
 }
